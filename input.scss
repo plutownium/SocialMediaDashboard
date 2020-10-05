@@ -52,9 +52,11 @@ section {
 
 #clever-hack {
     width: 100%;
-    height: 10px;
+    height: 5px;
     background: linear-gradient(90deg, hsl(37, 97%, 70%), hsl(329, 70%, 58%));
     border-top: 5px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
 }
 
 #fb {
@@ -62,7 +64,29 @@ section {
 }
 
 #ig {
-    // border-top-color: $ig;
+    @include bg-color;
+    margin-bottom: 20px;
+    width: 325px;
+    height: 215px;
+
+    border-top: 5px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+
+    div {
+        h2 {
+            @include dark-text;
+        }
+
+        h3 {
+            @include white-text;
+        }
+
+        h4 {
+            @include dark-text;
+            text-transform: uppercase;
+        }
+    }
 }
 
 #twtr {
