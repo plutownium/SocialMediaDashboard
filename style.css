@@ -1,18 +1,70 @@
 /* primary colors */
 /* dark theme colors */
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+#theme-select {
+  width: 325px;
+}
 #theme-select p {
   color: #8b97c6;
 }
 
+#clever-hack {
+  width: 100%;
+  height: 10px;
+  background: linear-gradient(90deg, #fdc468, #df4996);
+  border-top: 5px;
+}
+
+#fb {
+  border-top-color: #198ff5;
+}
+
+#twtr {
+  border-top-color: #1ca0f2;
+}
+
+#youtube {
+  border-top-color: #c4032a;
+}
+
 .card {
   background-color: #252a41;
+  margin-bottom: 20px;
+  width: 325px;
+  height: 215px;
+  border-radius: 5px;
+  border-top-style: solid;
+  border-top-width: thick;
 }
 .card h2 {
+  color: #8b97c6;
+}
+.card h3 {
   color: white;
+}
+.card h4 {
+  color: #8b97c6;
+  text-transform: uppercase;
 }
 
 .stat {
   background-color: #252a41;
+  width: 325px;
+  height: 125px;
+  border-radius: 3px;
 }
 
 /*# sourceMappingURL=style.css.map */
