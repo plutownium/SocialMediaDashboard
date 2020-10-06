@@ -31,17 +31,23 @@
         </style>
     </head>
     <body>
-        <div id="heading">
-            <h1>Social Media Dashboard</h1>
-            <p id="total-followers">Total Followers: 23,004</p>
-        </div>
-        <hr />
-        <div id="theme-select">
-            <p>Dark Mode</p>
-            <label class="switch">
-                <input type="checkbox" />
-                <span class="slider round"></span>
-            </label>
+        <div id="heading-wrapper">
+            <div id="heading">
+                <h1>Social Media Dashboard</h1>
+                <p id="total-followers">Total Followers: 23,004</p>
+            </div>
+            <hr />
+            <div id="theme-select">
+                <div class="misc-container">
+                    <p>Dark Mode</p>
+                </div>
+                <div class="misc-container">
+                    <label class="switch">
+                        <input type="checkbox" />
+                        <span class="slider round"></span>
+                    </label>
+                </div>
+            </div>
         </div>
         <section id="cards">
             <div id="fb" class="card">
@@ -99,107 +105,115 @@
 
         <section id="stats">
             <div id="overview">Overview - Today</div>
-            <div class="stat">
-                <div class="stat-wrapper">
-                    <h2>Page Views</h2>
-                    <img src="./images/icon-facebook.svg" alt="fb" />
-                </div>
-                <div class="stat-wrapper">
-                    <p>87</p>
-                    <div class="pct-wrapper">
-                        <img src="./images/icon-up.svg" alt="icon-up" />
-                        <span class="green">3%</span>
+            <div id="stats-wrapper">
+                <div class="stat">
+                    <div class="stat-wrapper">
+                        <h2>Page Views</h2>
+                        <img src="./images/icon-facebook.svg" alt="fb" />
+                    </div>
+                    <div class="stat-wrapper">
+                        <p>87</p>
+                        <div class="pct-wrapper">
+                            <img src="./images/icon-up.svg" alt="icon-up" />
+                            <span class="green">3%</span>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="stat">
-                <div class="stat-wrapper">
-                    <h2>Likes</h2>
-                    <img src="./images/icon-facebook.svg" alt="fb" />
-                </div>
-                <div class="stat-wrapper">
-                    <p>52</p>
-                    <div class="pct-wrapper">
-                        <img src="./images/icon-down.svg" alt="icon-down" />
-                        <span class="red">2%</span>
+                <div class="stat">
+                    <div class="stat-wrapper">
+                        <h2>Likes</h2>
+                        <img src="./images/icon-facebook.svg" alt="fb" />
+                    </div>
+                    <div class="stat-wrapper">
+                        <p>52</p>
+                        <div class="pct-wrapper">
+                            <img src="./images/icon-down.svg" alt="icon-down" />
+                            <span class="red">2%</span>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="stat">
-                <div class="stat-wrapper">
-                    <h2>Likes</h2>
-                    <img src="./images/icon-instagram.svg" alt="ig" />
-                </div>
-                <div class="stat-wrapper">
-                    <p>5462</p>
-                    <div class="pct-wrapper">
-                        <img src="./images/icon-up.svg" alt="icon-up" />
-                        <span class="green">2257%</span>
+                <div class="stat">
+                    <div class="stat-wrapper">
+                        <h2>Likes</h2>
+                        <img src="./images/icon-instagram.svg" alt="ig" />
+                    </div>
+                    <div class="stat-wrapper">
+                        <p>5462</p>
+                        <div class="pct-wrapper">
+                            <img src="./images/icon-up.svg" alt="icon-up" />
+                            <span class="green">2257%</span>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="stat">
-                <div class="stat-wrapper">
-                    <h2>Profile Views</h2>
-                    <img src="./images/icon-instagram.svg" alt="ig" />
-                </div>
-                <div class="stat-wrapper">
-                    <p>52k</p>
-                    <div class="pct-wrapper">
-                        <img src="./images/icon-up.svg" alt="icon-up" />
-                        <span class="green">1375%</span>
+                <div class="stat">
+                    <div class="stat-wrapper">
+                        <h2>Profile Views</h2>
+                        <img src="./images/icon-instagram.svg" alt="ig" />
+                    </div>
+                    <div class="stat-wrapper">
+                        <p>52k</p>
+                        <div class="pct-wrapper">
+                            <img src="./images/icon-up.svg" alt="icon-up" />
+                            <span class="green">1375%</span>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="stat">
-                <div class="stat-wrapper">
-                    <h2>Retweets</h2>
-                    <img src="./images/icon-twitter.svg" alt="icon-twitter" />
-                </div>
-                <div class="stat-wrapper">
-                    <p>117</p>
-                    <div class="pct-wrapper">
-                        <img src="./images/icon-up.svg" alt="icon-up" />
-                        <span class="green">303%</span>
+                <div class="stat">
+                    <div class="stat-wrapper">
+                        <h2>Retweets</h2>
+                        <img
+                            src="./images/icon-twitter.svg"
+                            alt="icon-twitter"
+                        />
+                    </div>
+                    <div class="stat-wrapper">
+                        <p>117</p>
+                        <div class="pct-wrapper">
+                            <img src="./images/icon-up.svg" alt="icon-up" />
+                            <span class="green">303%</span>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="stat">
-                <div class="stat-wrapper">
-                    <h2>Likes</h2>
-                    <img src="./images/icon-twitter.svg" alt="icon-twitter" />
-                </div>
-                <div class="stat-wrapper">
-                    <p>507</p>
-                    <div class="pct-wrapper">
-                        <img src="./images/icon-up.svg" alt="icon-up" />
-                        <span class="green">553%</span>
+                <div class="stat">
+                    <div class="stat-wrapper">
+                        <h2>Likes</h2>
+                        <img
+                            src="./images/icon-twitter.svg"
+                            alt="icon-twitter"
+                        />
+                    </div>
+                    <div class="stat-wrapper">
+                        <p>507</p>
+                        <div class="pct-wrapper">
+                            <img src="./images/icon-up.svg" alt="icon-up" />
+                            <span class="green">553%</span>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="stat">
-                <div class="stat-wrapper">
-                    <h2>Likes</h2>
-                    <img src="./images/icon-youtube.svg" alt="youtube" />
-                </div>
-                <div class="stat-wrapper">
-                    <p>107</p>
-                    <div class="pct-wrapper">
-                        <img src="./images/icon-down.svg" alt="icon-down" />
-                        <span class="red">19%</span>
+                <div class="stat">
+                    <div class="stat-wrapper">
+                        <h2>Likes</h2>
+                        <img src="./images/icon-youtube.svg" alt="youtube" />
+                    </div>
+                    <div class="stat-wrapper">
+                        <p>107</p>
+                        <div class="pct-wrapper">
+                            <img src="./images/icon-down.svg" alt="icon-down" />
+                            <span class="red">19%</span>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="stat">
-                <div class="stat-wrapper">
-                    <h2>Total Views</h2>
-                    <img src="./images/icon-youtube.svg" alt="youtube" />
-                </div>
-                <div class="stat-wrapper">
-                    <p>1407</p>
-                    <div class="pct-wrapper">
-                        <img src="./images/icon-down.svg" alt="icon-down" />
-                        <span class="red">12%</span>
+                <div class="stat">
+                    <div class="stat-wrapper">
+                        <h2>Total Views</h2>
+                        <img src="./images/icon-youtube.svg" alt="youtube" />
+                    </div>
+                    <div class="stat-wrapper">
+                        <p>1407</p>
+                        <div class="pct-wrapper">
+                            <img src="./images/icon-down.svg" alt="icon-down" />
+                            <span class="red">12%</span>
+                        </div>
                     </div>
                 </div>
             </div>

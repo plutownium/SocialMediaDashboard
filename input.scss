@@ -209,6 +209,14 @@ hr {
     }
 }
 
+.pct-wrapper {
+    @include flex-row-center();
+}
+
+.pct-wrapper * {
+    margin: 0 2px;
+}
+
 .red {
     color: $bright-red;
 }
@@ -247,12 +255,63 @@ hr {
     }
 }
 
-.pct-wrapper {
-    @include flex-row-center();
-}
+@media (min-width: 1150px) {
+    hr {
+        display: none;
+    }
 
-.pct-wrapper * {
-    margin: 0 2px;
+    #cards {
+        width: 1110px;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    #heading-wrapper {
+        width: 1110px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    #ig {
+        width: 255px;
+    }
+
+    #stats-wrapper {
+        width: 1110px;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    #theme-select {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: right;
+    }
+
+    #theme-select > * {
+        margin: 0 10px;
+    }
+
+    .card {
+        width: 255px;
+    }
+
+    .misc-container {
+        width: fit-content;
+        height: 40px;
+        display: inline-block;
+        text-align: right;
+    }
+
+    .stat {
+        width: 255px;
+    }
 }
 
 /* Switch from W3Schools */
