@@ -1,10 +1,15 @@
 /* primary colors */
 /* dark theme colors */
+* {
+  font-family: Inter;
+}
+
 body {
+  background: #1e202a;
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
 }
 
 section {
@@ -14,11 +19,14 @@ section {
   flex-direction: column;
 }
 
-#theme-select {
-  width: 325px;
+h1 {
+  color: white;
+  font-size: 18px;
 }
-#theme-select p {
-  color: #8b97c6;
+
+hr {
+  width: 325px;
+  border-color: #8b97c6;
 }
 
 #clever-hack {
@@ -30,28 +38,40 @@ section {
   border-top-right-radius: 5px;
 }
 
-#fb {
-  border-top-color: #198ff5;
+#heading {
+  width: 325px;
 }
 
-#ig {
-  background-color: #252a41;
-  margin-bottom: 20px;
-  width: 325px;
-  height: 215px;
-  border-top: 5px;
-  border-top-left-radius: 5px;
-  border-top-right-radius: 5px;
-}
-#ig div h2 {
-  color: #8b97c6;
-}
-#ig div h3 {
+#overview {
+  width: 100%;
+  margin: 20px 0;
   color: white;
+  font-size: 20px;
+  font-weight: bold;
 }
-#ig div h4 {
+
+#theme-select {
+  padding: 7px 0 30px 0;
+  width: 325px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#theme-select p {
   color: #8b97c6;
-  text-transform: uppercase;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+#total-followers {
+  font-size: 12px;
+  color: #8b97c6;
+  font-weight: bold;
+}
+
+/* platform names */
+#fb {
+  border-top-color: #198ff5;
 }
 
 #twtr {
@@ -62,6 +82,40 @@ section {
   border-top-color: #c4032a;
 }
 
+#ig {
+  background-color: #252a41;
+  margin-bottom: 20px;
+  width: 325px;
+  height: 215px;
+  border-top: 5px;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  text-align: center;
+}
+#ig div h2 {
+  color: #8b97c6;
+  font-size: 10px;
+  display: inline;
+}
+#ig div h3 {
+  margin: 0;
+  padding: 0;
+  font-size: 44px;
+  font-weight: 700;
+  color: white;
+}
+#ig div h4 {
+  margin: 3px 0;
+  color: #8b97c6;
+  font-size: 10px;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+}
+#ig div p {
+  margin: 25px 0;
+  font-size: 10px;
+}
+
 .card {
   background-color: #252a41;
   margin-bottom: 20px;
@@ -70,23 +124,164 @@ section {
   border-radius: 5px;
   border-top-style: solid;
   border-top-width: thick;
+  text-align: center;
 }
 .card h2 {
   color: #8b97c6;
+  font-size: 10px;
+  display: inline;
 }
 .card h3 {
+  margin: 0;
+  padding: 0;
+  font-size: 44px;
+  font-weight: 700;
   color: white;
 }
 .card h4 {
+  margin: 3px 0;
   color: #8b97c6;
+  font-size: 10px;
   text-transform: uppercase;
+  letter-spacing: 4px;
+}
+.card p {
+  margin: 25px 0;
+  font-size: 10px;
+}
+
+.change-wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.change-wrapper * {
+  margin: 0 6px;
+}
+
+.green {
+  color: #1db489;
+}
+
+.handle-wrapper {
+  margin: 25px 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.handle-wrapper * {
+  margin: 0 3px;
+}
+
+.red {
+  color: #dc414c;
 }
 
 .stat {
   background-color: #252a41;
+  margin-bottom: 15px;
   width: 325px;
   height: 125px;
   border-radius: 3px;
+}
+.stat h2 {
+  color: #8b97c6;
+  font-size: 12px;
+}
+.stat p {
+  font-size: 22px;
+  color: white;
+}
+.stat span {
+  font-size: 10px;
+}
+
+.stat-wrapper {
+  height: 50%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.stat-wrapper * {
+  margin: 20px;
+}
+
+.pct-wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.pct-wrapper * {
+  margin: 0 2px;
+}
+
+/* Switch from W3Schools */
+/* The switch - the box around the slider */
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 28px;
+}
+
+/* Hide default HTML checkbox */
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+/* The slider */
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #2196f3;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 20px;
+  width: 22px;
+  left: 4px;
+  bottom: 4px;
+  background-color: #1e202a;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+input:checked + .slider {
+  background-color: white;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #ccc;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
 }
 
 /*# sourceMappingURL=style.css.map */
