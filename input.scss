@@ -288,7 +288,8 @@ hr {
     }
 
     #theme-select {
-        text-align: right;
+        @include flex-row-center();
+        justify-content: flex-end;
     }
 
     #theme-select > * {
@@ -302,7 +303,9 @@ hr {
     .misc-container {
         width: fit-content;
         height: 40px;
-        display: inline-block;
+        // display: inline-block;
+        @include flex-row-center();
+        align-items: center;
     }
 
     .stat {
