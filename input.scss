@@ -164,9 +164,11 @@ hr {
     @include bg-color;
     margin-bottom: 20px;
     @include width;
-    height: 215px;
+    height: 220px;
 
     @include border-stuff();
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
     text-align: center;
 
     div {

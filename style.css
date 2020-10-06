@@ -86,10 +86,12 @@ hr {
   background-color: #252a41;
   margin-bottom: 20px;
   width: 325px;
-  height: 215px;
+  height: 220px;
   border-top: 5px;
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
   text-align: center;
 }
 #ig div h2 {
