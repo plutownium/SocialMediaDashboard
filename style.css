@@ -183,7 +183,7 @@ hr {
 }
 
 .pct-wrapper * {
-  margin: 0 2px;
+  margin: 0 2px !important;
 }
 
 .red {
@@ -253,9 +253,6 @@ hr {
   }
 
   #theme-select {
-    display: flex;
-    align-items: center;
-    justify-content: center;
     text-align: right;
   }
 
@@ -271,7 +268,6 @@ hr {
     width: fit-content;
     height: 40px;
     display: inline-block;
-    text-align: right;
   }
 
   .stat {
