@@ -12,13 +12,18 @@ checkbox.addEventListener("click", () => {
         const cards = document.getElementsByClassName("card");
         for (const card of cards) {
             card.style.backgroundColor = "hsl(227, 47%, 96%)";
+            card.childNodes[3].style.color = "hsl(230, 17%, 14%)";
         }
         document.getElementById("ig").style.backgroundColor =
             "hsl(227, 47%, 96%)";
+        // console.log(document.getElementById("ig").childNodes[3].childNodes);
+        // document.getElementById("ig").childNodes[3].childNodes[4].style.color =
+        //     "hsl(230, 17%, 14%)";
 
         const stats = document.getElementsByClassName("stat");
         for (const stat of stats) {
             stat.style.backgroundColor = "hsl(227, 47%, 96%)";
+            stat.childNodes[3].childNodes[1].style.color = "hsl(230, 17%, 14%)";
         }
     } else {
         darkMode = true;
@@ -29,13 +34,17 @@ checkbox.addEventListener("click", () => {
         const cards = document.getElementsByClassName("card");
         for (const card of cards) {
             card.style.backgroundColor = "hsl(228, 28%, 20%)";
+            card.childNodes[3].style.color = "hsl(0, 0%, 100%)";
         }
         document.getElementById("ig").style.backgroundColor =
             "hsl(228, 28%, 20%)";
+        // document.getElementById("ig").childNodes[3].childNodes[4].style.color =
+        //     "hsl(0, 0%, 100%)";
 
         const stats = document.getElementsByClassName("stat");
         for (const stat of stats) {
             stat.style.backgroundColor = "hsl(228, 28%, 20%)";
+            stat.childNodes[3].childNodes[1].style.color = "hsl(0, 0%, 100%)";
         }
     }
     console.log(darkMode);
