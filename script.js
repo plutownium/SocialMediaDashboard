@@ -8,11 +8,35 @@ checkbox.addEventListener("click", () => {
         document.body.style.background = "hsl(0, 0%, 100%)";
         // document.getElementsByClassName("slider").style.background =
         //     "hsl(0, 0%, 100%)";
+
+        const cards = document.getElementsByClassName("card");
+        for (const card of cards) {
+            card.style.backgroundColor = "hsl(227, 47%, 96%)";
+        }
+        document.getElementById("ig").style.backgroundColor =
+            "hsl(227, 47%, 96%)";
+
+        const stats = document.getElementsByClassName("stat");
+        for (const stat of stats) {
+            stat.style.backgroundColor = "hsl(227, 47%, 96%)";
+        }
     } else {
         darkMode = true;
         document.body.style.background = "hsl(230, 17%, 14%)";
         // document.getElementsByClassName("slider").style.background =
         // "hsl(230, 17%, 14%)";
+
+        const cards = document.getElementsByClassName("card");
+        for (const card of cards) {
+            card.style.backgroundColor = "hsl(228, 28%, 20%)";
+        }
+        document.getElementById("ig").style.backgroundColor =
+            "hsl(228, 28%, 20%)";
+
+        const stats = document.getElementsByClassName("stat");
+        for (const stat of stats) {
+            stat.style.backgroundColor = "hsl(228, 28%, 20%)";
+        }
     }
     console.log(darkMode);
 });
