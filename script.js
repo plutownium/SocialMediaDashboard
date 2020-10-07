@@ -16,15 +16,21 @@ checkbox.addEventListener("click", () => {
         }
         document.getElementById("ig").style.backgroundColor =
             "hsl(227, 47%, 96%)";
-        // console.log(document.getElementById("ig").childNodes[3].childNodes);
-        // document.getElementById("ig").childNodes[3].childNodes[4].style.color =
-        //     "hsl(230, 17%, 14%)";
+        document.getElementById("ig").childNodes[3].childNodes[3].style.color =
+            "hsl(230, 17%, 14%)";
+        //     "red";
 
         const stats = document.getElementsByClassName("stat");
         for (const stat of stats) {
             stat.style.backgroundColor = "hsl(227, 47%, 96%)";
             stat.childNodes[3].childNodes[1].style.color = "hsl(230, 17%, 14%)";
         }
+
+        document.getElementById("heading").childNodes[1].style.color =
+            "hsl(230, 17%, 14%)";
+
+        document.getElementsByClassName("slider")[0].style.backgroundColor =
+            "rgb(171,175,202)";
     } else {
         darkMode = true;
         document.body.style.background = "hsl(230, 17%, 14%)";
@@ -38,14 +44,20 @@ checkbox.addEventListener("click", () => {
         }
         document.getElementById("ig").style.backgroundColor =
             "hsl(228, 28%, 20%)";
-        // document.getElementById("ig").childNodes[3].childNodes[4].style.color =
-        //     "hsl(0, 0%, 100%)";
+        document.getElementById("ig").childNodes[3].childNodes[3].style.color =
+            "hsl(0, 0%, 100%)";
 
         const stats = document.getElementsByClassName("stat");
         for (const stat of stats) {
             stat.style.backgroundColor = "hsl(228, 28%, 20%)";
             stat.childNodes[3].childNodes[1].style.color = "hsl(0, 0%, 100%)";
         }
+
+        document.getElementById("heading").childNodes[1].style.color =
+            "hsl(0, 0%, 100%)";
+        console.log(document.getElementsByClassName("slider"));
+        document.getElementsByClassName("slider")[0].style.backgroundColor =
+            "#2196f3";
     }
     console.log(darkMode);
 });

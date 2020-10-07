@@ -1,5 +1,6 @@
 /* primary colors */
 /* dark theme colors */
+/* light theme colors */
 * {
   font-family: Inter;
 }
@@ -116,6 +117,7 @@ hr {
 #ig div p {
   margin: 25px 0;
   font-size: 10px;
+  font-weight: bold;
 }
 
 .card {
@@ -150,6 +152,7 @@ hr {
 .card p {
   margin: 25px 0;
   font-size: 10px;
+  font-weight: bold;
 }
 
 .change-wrapper {
@@ -206,9 +209,11 @@ hr {
 .stat p {
   font-size: 22px;
   color: white;
+  font-weight: 700;
 }
 .stat span {
   font-size: 10px;
+  font-weight: bold;
 }
 
 .stat-wrapper {

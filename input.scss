@@ -82,6 +82,7 @@ $border-width: 5px;
     p {
         margin: 25px 0;
         font-size: 10px;
+        font-weight: bold;
     }
 }
 
@@ -245,10 +246,12 @@ hr {
     p {
         font-size: 22px;
         @include white-text;
+        font-weight: 700;
     }
 
     span {
         font-size: 10px;
+        font-weight: bold;
     }
 }
 
